@@ -21,11 +21,11 @@ return [
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[listtask]{TEXT1}[/listtask]',
-                '<div class="checkboxes"><span><input type="checkbox">{TEXT1}</span></div>'
+                '<label><span><input type="checkbox" class="check-space">{TEXT1}</span></label>'
             );
             $config->BBCodes->addCustom(
                 '[checktask]{TEXT2}[/checktask]',
-                '<div class="checkboxes"><span><input type="checkbox" checked>{TEXT2}</span></div>'
+                '<label><span><input type="checkbox" class="check-space" checked>{TEXT2}</span></label>'
             );
         })
 ];
