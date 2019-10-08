@@ -21,7 +21,7 @@ return [
             );
             $config->BBCodes->addCustom(
                 '[checktask]{TEXT2}[/checktask]',
-                '<span><input type="checkbox" style="margin-right: 10px" checked>{TEXT2}</span>'
+                '<span><input type="checkbox" style="margin-right: 10px" checked disabled>{TEXT2}</span>'
             );
         })
 ];
