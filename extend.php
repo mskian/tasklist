@@ -15,17 +15,17 @@ use s9e\TextFormatter\Configurator;
 return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/mskian-tasklist/styles.css">';
+            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/mskian-tasklist/style.css">';
         }),
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[listtask]{TEXT1}[/listtask]',
-                '<label><span class="msklist"><input type="checkbox">{TEXT1}</span></label>'
+                '<div class="checkboxes"><span><input type="checkbox">{TEXT1}</span></div>'
             );
             $config->BBCodes->addCustom(
                 '[checktask]{TEXT2}[/checktask]',
-                '<label><span class="msklist"><input type="checkbox" checked>{TEXT2}</span></label>'
+                '<div class="checkboxes"><span><input type="checkbox" checked>{TEXT2}</span></div>'
             );
         })
 ];
