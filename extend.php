@@ -17,7 +17,7 @@ return [
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[listtask]{TEXT1}[/listtask]',
-                '<span><input type="checkbox" style="margin-right: 10px">{TEXT1}</span>'
+                '<span><input type="checkbox" style="margin-right: 10px" disabled>{TEXT1}</span>'
             );
             $config->BBCodes->addCustom(
                 '[checktask]{TEXT2}[/checktask]',
