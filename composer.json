@@ -1,0 +1,34 @@
+{
+    "name": "mskian/tasklist",
+    "description": "Task list For Flarum Forum Post.",
+    "authors": [
+        {
+            "name": "Santhosh Veer",
+            "email": "me@santhoshveer.com",
+            "homepage": "https://santhoshveer.com",
+            "role": "Creator"
+        }
+    ],
+    "keywords": [
+        "flarum",
+        "tasklist"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "autoload": {
+        "psr-4": {"mskian\\tasklist\\": "src/"}
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Tasklist",
+            "icon": {
+                "name": "fas fa-check-double",
+                "backgroundColor": "#ddd",
+                "color": "#000"
+            }
+        }
+    }
+}
