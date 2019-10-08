@@ -6,7 +6,7 @@ I am used this on My Forum Made using BBCode and Text formatting library.
 
 My Forum post  - <https://discuss.flarum.org/d/21582-markdown-tasklist>
 
-**Note**: This is Temporary Solution and Straight Forward No Javascript Logics only HTML
+**Note**: This is Temporary Solution and Straight Forward No Javascript Logic only HTML
 
 If you have any Idea's your PR is always welcome 😃
 
@@ -26,12 +26,12 @@ composer update mskian/tasklist
 
 ```markdown
 ## List the Task List with uncheck box
-[listtask]{TEXT1}[/listtask]
+[listtask]Commit My PR[/listtask]
 ```
 
 ```markdown
-# List the Task List with checked box
-[checktask]{TEXT1}[/checktask]
+## List the Task List with checked box
+[checktask]Commit My PR[/checktask]
 ```
 
 ## LICENSE
