@@ -2,4 +2,12 @@
 
 > Tasklist Extension for Flarum Forum post
 
-Extension unser development
+Extension under development
+
+```bash
+composer require mskian/tasklist "dev-master"
+```
+
+## LICENSE
+
+MIT

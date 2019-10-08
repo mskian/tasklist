@@ -3,7 +3,7 @@
 /*
  * This file is part of Flarum.
  *
- * The creator of Flarum Tasklist is Santhosh Veer. https://santhoshveer.com
+ * Flarum Task List Extension by Santhosh Veer. https://santhoshveer.com
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
@@ -13,15 +13,19 @@ use Flarum\Frontend\Document;
 use s9e\TextFormatter\Configurator;
 
 return [
+    (new Extend\Frontend('forum'))
+        ->content(function (Document $document) {
+            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/mskian-tasklist/styles.css">';
+        }),
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[listtask]{TEXT1}[/listtask]',
-                '<span><input type="checkbox">{TEXT1}</span><br>'
+                '<label><span class="msklist"><input type="checkbox">{TEXT1}</span></label>'
             );
             $config->BBCodes->addCustom(
                 '[checktask]{TEXT2}[/checktask]',
-                '<span><input type="checkbox" checked>{TEXT2}</span><br>'
+                '<label><span class="msklist"><input type="checkbox" checked>{TEXT2}</span></label>'
             );
         })
 ];
